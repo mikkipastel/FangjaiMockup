@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mikkipastel.fangjaimockup"
-    android:versionCode="1"
-    android:versionName="1.0"
     android:installLocation="preferExternal">
 
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -18,7 +16,7 @@
         android:theme="@style/AppTheme">
 
         <meta-data
-            android:name="com.mikkipastel.appmanhr.configuration.GlideConfiguration"
+            android:name="com.mikkipastel.fangjaimockup.Configuration.GlideConfiguration"
             android:value="GlideModule" />
 
         <activity android:name=".MainActivity">

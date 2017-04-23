@@ -11,16 +11,12 @@ import com.mikkipastel.fangjaimockup.View.AdsListItem;
 import com.mikkipastel.fangjaimockup.View.TrackListItem;
 import com.mikkipastel.fangjaimockup.View.VideoListItem;
 
-import java.util.List;
-
 
 /**
  * Created by acer on 4/21/2017.
  */
 
 public class SeedAdapter extends BaseAdapter {
-
-    //List<seed> dao;
 
     @Override
     public int getCount() {
@@ -47,6 +43,11 @@ public class SeedAdapter extends BaseAdapter {
         TrackListItem trackItem = new TrackListItem(parent.getContext());
         AdsListItem adsItem = new AdsListItem(parent.getContext());
         VideoListItem videoItem = new VideoListItem(parent.getContext());
+
+        //print for check
+        Toast.makeText(parent.getContext(),
+                dao.getType() + " " + dao.getName(),
+                Toast.LENGTH_SHORT).show();
 
         //display layout from type
         if (convertView == null) {

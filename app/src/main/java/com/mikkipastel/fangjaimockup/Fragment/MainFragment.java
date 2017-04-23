@@ -55,8 +55,6 @@ public class MainFragment extends Fragment {
         adapter = new SeedAdapter();
         myListView.setAdapter(adapter);
 
-        //myListView.setOnItemClickListener(listViewItemClickListener);
-
         swipeRefreshLayout = (SwipeRefreshLayout)view.findViewById(R.id.swipeRefreshLayout);
         swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
             @Override

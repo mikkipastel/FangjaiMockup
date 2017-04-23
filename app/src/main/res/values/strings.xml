@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">FangjaiMockup</string>
+
+    <string name="track">track</string>
 </resources>

@@ -1,6 +1,7 @@
 package com.mikkipastel.fangjaimockup.View;
 
 import android.content.Context;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -13,32 +14,21 @@ import com.mikkipastel.fangjaimockup.R;
  * Created by acer on 4/21/2017.
  */
 
-public class TrackListItem extends BaseCustomViewGroup {
+public class TrackListItem {
     ImageView imageTrack;
     TextView nameTrack;
 
-    public TrackListItem(Context context) {
-        super(context);
-        initInflate();
-        initInstances();
+    public TrackListItem(View parent) {
+        imageTrack = (ImageView) parent.findViewById(R.id.imageTrack);
+        nameTrack = (TextView) parent.findViewById(R.id.nameTrack);
     }
 
-    private void initInflate() {
-        inflate(getContext(), R.layout.listview_track, this);
-    }
-
-    private void initInstances() {
-        // findViewById here
-        imageTrack = (ImageView) findViewById(R.id.imageTrack);
-        nameTrack = (TextView) findViewById(R.id.nameTrack);
-    }
-
-    public void setImageTrack(String picurl) {
-        Glide.with(getContext())
+    public void setImageTrack(Context context, String picurl) {
+        Glide.with(context)
                 .load(picurl)
                 .asBitmap()
-                .error(R.mipmap.ic_launcher)
-                .placeholder(R.mipmap.ic_launcher)
+                .error(R.drawable.fungjai_logo_white)
+                .placeholder(R.drawable.fungjai_logo_white)
                 .diskCacheStrategy(DiskCacheStrategy.RESULT)
                 .into(imageTrack);
     }

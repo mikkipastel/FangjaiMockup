@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="track_view" type="id"/>
+    <item name="video_view" type="id"/>
+    <item name="ads_view" type="id"/>
+</resources>

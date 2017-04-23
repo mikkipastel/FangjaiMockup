@@ -13,30 +13,19 @@ import com.mikkipastel.fangjaimockup.R;
  * Created by acer on 4/21/2017.
  */
 
-public class VideoListItem extends BaseCustomViewGroup {
+public class VideoListItem {
     ImageView imageVideo;
 
-    public VideoListItem(Context context) {
-        super(context);
-        initInflate();
-        initInstances();
-    }
-
-    private void initInflate() {
-        inflate(getContext(), R.layout.listview_video, this);
-    }
-
-    private void initInstances() {
-        // findViewById here
-        imageVideo = (ImageView) findViewById(R.id.imageVideo);
+    public VideoListItem(View parent) {
+        imageVideo = (ImageView) parent.findViewById(R.id.imageVideo);
     }
 
     //set video cover in app
-    public void setImageVideo(String picurl) {
-        Glide.with(getContext())
+    public void setImageVideo(Context context, String picurl) {
+        Glide.with(context)
                 .load(picurl)
-                .error(R.mipmap.ic_launcher)
-                .placeholder(R.mipmap.ic_launcher)
+                .error(R.drawable.fungjai_logo_white)
+                .placeholder(R.drawable.fungjai_logo_white)
                 .diskCacheStrategy(DiskCacheStrategy.RESULT)
                 .into(imageVideo);
     }

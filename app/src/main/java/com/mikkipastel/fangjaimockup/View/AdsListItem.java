@@ -23,7 +23,7 @@ public class AdsListItem extends BaseCustomViewGroup {
     }
 
     private void initInflate() {
-        inflate(getContext(), R.layout.listview_video, this);
+        inflate(getContext(), R.layout.listview_ads, this);
     }
 
     private void initInstances() {

@@ -15,6 +15,8 @@ http://stackoverflow.com/questions/24154917/retrofit-expected-begin-object-but-w
 - How do I remove lines between ListViews on Android?
 http://stackoverflow.com/questions/1914477/how-do-i-remove-lines-between-listviews-on-android
 
-#Screenshot
-![Alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
--(coming soon)
+# Screenshot:
+- ![picture](http://i.imgur.com/QMIt6if.png)
+- ![picture](http://i.imgur.com/aLZPRQ7.png)
+
+

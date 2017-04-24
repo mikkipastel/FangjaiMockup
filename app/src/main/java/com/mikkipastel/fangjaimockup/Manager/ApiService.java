@@ -14,7 +14,5 @@ import retrofit2.http.GET;
 
 public interface ApiService {
     @GET("seed.json")
-    //Call<seed> loadList();
-    //Callback<List<seed>> loadList();
     Call<List<seed>> loadList();
 }

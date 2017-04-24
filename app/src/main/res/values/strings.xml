@@ -2,4 +2,6 @@
     <string name="app_name">FangjaiMockup</string>
 
     <string name="track">track</string>
+    <string name="video">video</string>
+    <string name="ads">ads</string>
 </resources>

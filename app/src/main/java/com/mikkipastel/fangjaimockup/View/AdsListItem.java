@@ -22,11 +22,13 @@ public class AdsListItem {
     public void setImageAds(Context context, String picurl) {
         Glide.with(context)
                 .load(picurl)
+                .asBitmap()
                 .error(R.drawable.fungjai_logo_white)
                 .placeholder(R.drawable.fungjai_logo_white)
                 .diskCacheStrategy(DiskCacheStrategy.RESULT)
-                .fitCenter()
                 .into(imageAds);
+
+
     }
 
 }

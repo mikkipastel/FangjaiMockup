@@ -3,7 +3,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="@dimen/activity_vertical_margin">
+    android:padding="@dimen/medium_margin">
 
     <ImageView
         android:id="@+id/imageAds"
@@ -11,6 +11,7 @@
         android:layout_height="match_parent"
         android:src="@drawable/fungjai_logo_white"
         android:background="@color/fangjai_bg"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:scaleType="centerInside" />
 
 </LinearLayout>

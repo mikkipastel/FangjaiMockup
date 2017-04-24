@@ -38,6 +38,4 @@ public class SeedManager {
         mContext = Contextor.getInstance().getContext();
     }
 
-
-
 }

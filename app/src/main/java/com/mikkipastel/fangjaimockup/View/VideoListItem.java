@@ -15,9 +15,11 @@ import com.mikkipastel.fangjaimockup.R;
 
 public class VideoListItem {
     ImageView imageVideo;
+    TextView nameVideo;
 
     public VideoListItem(View parent) {
         imageVideo = (ImageView) parent.findViewById(R.id.imageVideo);
+        nameVideo = (TextView) parent.findViewById(R.id.videoName);
     }
 
     //set video cover in app
@@ -28,6 +30,11 @@ public class VideoListItem {
                 .placeholder(R.drawable.fungjai_logo_white)
                 .diskCacheStrategy(DiskCacheStrategy.RESULT)
                 .into(imageVideo);
+    }
+    
+    //add video name because give information abou this to user
+    public void setNameVideo(String name){
+        nameVideo.setText(name);
     }
     
     //add scale video cover to 4:3

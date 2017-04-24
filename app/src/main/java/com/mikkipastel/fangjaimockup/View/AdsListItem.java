@@ -19,7 +19,8 @@ public class AdsListItem {
     public AdsListItem(View parent) {
         imageAds = (ImageView) parent.findViewById(R.id.imageAds);
     }
-//set video cover in app
+
+    //set ads cover in app
     public void setImageAds(Context context, String picurl) {
         Glide.with(context)
                 .load(picurl)
@@ -27,6 +28,14 @@ public class AdsListItem {
                 .placeholder(R.drawable.fungjai_logo_white)
                 .diskCacheStrategy(DiskCacheStrategy.RESULT)
                 .into(imageAds);
+    }
+    
+    //add to scale cover to 4:3
+    @Override
+    public void onWindowFocusChanged(boolean hasWindowFocus) {
+        super.onWindowFocusChanged(hasWindowFocus);
+        width = imageAds.getWidth();
+        imageAds.setMaxHeight(width * 3 / 4);
     }
 
 }

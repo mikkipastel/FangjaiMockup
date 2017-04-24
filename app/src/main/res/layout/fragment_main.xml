@@ -11,7 +11,9 @@
         <ListView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/seed_list" />
+            android:id="@+id/seed_list"
+            android:divider="@null"
+            android:dividerHeight="0dp"/>
     </android.support.v4.widget.SwipeRefreshLayout>
 
 </LinearLayout>

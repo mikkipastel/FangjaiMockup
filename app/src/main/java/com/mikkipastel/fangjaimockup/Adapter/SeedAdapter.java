@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.Toast;
 
 import com.mikkipastel.fangjaimockup.DAO.seed;
 import com.mikkipastel.fangjaimockup.Manager.SeedManager;
@@ -13,7 +12,6 @@ import com.mikkipastel.fangjaimockup.R;
 import com.mikkipastel.fangjaimockup.View.AdsListItem;
 import com.mikkipastel.fangjaimockup.View.TrackListItem;
 import com.mikkipastel.fangjaimockup.View.VideoListItem;
-
 
 public class SeedAdapter extends BaseAdapter {
 
@@ -41,7 +39,7 @@ public class SeedAdapter extends BaseAdapter {
 
         //check not null object
         if (convertView == null) {
-            //check get json complete 
+            //check get json complete
             if (dao.getType() != null) {
                 //display layout from type
                 if (dao.getType().contentEquals("track")) {
@@ -95,7 +93,7 @@ public class SeedAdapter extends BaseAdapter {
         }
 
         item.setImageVideo(context, dao.getCover());
-        item.setNameVideo("[" + dao.getType() + "] " + dao.getName());
+        //item.setNameVideo("[" + dao.getType() + "] " + dao.getName());
 
         return convertView;
     }
@@ -117,7 +115,7 @@ public class SeedAdapter extends BaseAdapter {
         }
 
         item.setImageAds(context, dao.getCover());
-        item.setNameAds("[" + dao.getType() + "] " + dao.getName());
+        //item.setNameAds("[" + dao.getType() + "] " + dao.getName());
 
         return convertView;
     }

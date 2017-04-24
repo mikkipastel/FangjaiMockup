@@ -2,10 +2,6 @@ package com.mikkipastel.fangjaimockup.Manager;
 
 import android.content.Context;
 
-/**
- * Created by acer on 4/21/2017.
- */
-
 public class Contextor {
     private static Contextor instance;
 

@@ -3,10 +3,6 @@ package com.mikkipastel.fangjaimockup.DAO;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-/**
- * Created by acer on 4/21/2017.
- */
-
 public class seed {
     @SerializedName("id")
     @Expose

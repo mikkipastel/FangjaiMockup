@@ -18,17 +18,11 @@ import com.mikkipastel.fangjaimockup.Manager.SeedManager;
 import com.mikkipastel.fangjaimockup.R;
 
 import java.io.IOException;
-import java.util.Collections;
 import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
-
-
-/**
- * Created by acer on 4/21/2017.
- */
 
 public class MainFragment extends Fragment {
     ListView myListView;
@@ -102,7 +96,6 @@ public class MainFragment extends Fragment {
             List<seed> collection = response.body();
             SeedManager.getInstance().setDao(collection);
             adapter.notifyDataSetChanged();
-            //showErrorToast(collection.get(0).getId() + " " + collection.get(0).getType());
         } else {
             try { //404 not found
                 showErrorToast(response.errorBody().string());

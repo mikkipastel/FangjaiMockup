@@ -9,10 +9,6 @@ import android.util.AttributeSet;
 import android.util.SparseArray;
 import android.widget.FrameLayout;
 
-/**
- * Created by acer on 4/21/2017.
- */
-
 public class BaseCustomViewGroup extends FrameLayout {
     public BaseCustomViewGroup(Context context) {
         super(context);

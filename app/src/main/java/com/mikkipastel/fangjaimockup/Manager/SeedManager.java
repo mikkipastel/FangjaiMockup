@@ -1,17 +1,10 @@
 package com.mikkipastel.fangjaimockup.Manager;
 
-import android.content.ClipData;
 import android.content.Context;
 
 import com.mikkipastel.fangjaimockup.DAO.seed;
 
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
-
-/**
- * Created by acer on 4/21/2017.
- */
 
 public class SeedManager {
     private static SeedManager instance;

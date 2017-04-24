@@ -9,14 +9,9 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.mikkipastel.fangjaimockup.R;
 
-
-/**
- * Created by acer on 4/21/2017.
- */
-
 public class TrackListItem {
-    ImageView imageTrack;
-    TextView nameTrack;
+    private ImageView imageTrack;
+    private TextView nameTrack;
 
     public TrackListItem(View parent) {
         imageTrack = (ImageView) parent.findViewById(R.id.imageTrack);

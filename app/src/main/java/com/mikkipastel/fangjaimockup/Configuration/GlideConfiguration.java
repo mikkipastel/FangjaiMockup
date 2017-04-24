@@ -7,10 +7,6 @@ import com.bumptech.glide.GlideBuilder;
 import com.bumptech.glide.load.DecodeFormat;
 import com.bumptech.glide.module.GlideModule;
 
-/**
- * Created by acer on 4/21/2017.
- */
-
 //RGB565 to ARGB8888
 public class GlideConfiguration implements GlideModule {
     @Override

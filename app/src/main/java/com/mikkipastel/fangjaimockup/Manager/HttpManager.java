@@ -3,10 +3,6 @@ package com.mikkipastel.fangjaimockup.Manager;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-/**
- * Created by acer on 4/21/2017.
- */
-
 public class HttpManager {
     // from http://www.anop72.info/api/seed.json
     public String apiUrl = "http://www.anop72.info/api/";

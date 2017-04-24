@@ -5,9 +5,6 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.view.View.BaseSavedState;
 
-/**
- * Created by acer on 4/21/2017.
- */
 
 public class BundleSavedState extends BaseSavedState {
     private Bundle bundle = new Bundle();

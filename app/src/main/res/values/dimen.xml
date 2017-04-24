@@ -4,5 +4,8 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
 
+    <dimen name="mini_margin">5dp</dimen>
+
     <dimen name="track_font">18sp</dimen>
+    <dimen name="content_font">18sp</dimen>
 </resources>

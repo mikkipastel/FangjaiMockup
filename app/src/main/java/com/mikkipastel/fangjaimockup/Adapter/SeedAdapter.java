@@ -15,10 +15,6 @@ import com.mikkipastel.fangjaimockup.View.TrackListItem;
 import com.mikkipastel.fangjaimockup.View.VideoListItem;
 
 
-/**
- * Created by acer on 4/21/2017.
- */
-
 public class SeedAdapter extends BaseAdapter {
 
     @Override

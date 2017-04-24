@@ -12,6 +12,8 @@ Reference:
 http://android.amberfog.com/?p=296
 - Retrofit Expected BEGIN_OBJECT but was BEGIN_ARRAY
 http://stackoverflow.com/questions/24154917/retrofit-expected-begin-object-but-was-begin-array
+- How do I remove lines between ListViews on Android?
+http://stackoverflow.com/questions/1914477/how-do-i-remove-lines-between-listviews-on-android
 
 #Screenshot
 ![Alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)

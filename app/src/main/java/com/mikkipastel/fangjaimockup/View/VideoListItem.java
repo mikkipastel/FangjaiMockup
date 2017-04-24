@@ -29,5 +29,13 @@ public class VideoListItem {
                 .diskCacheStrategy(DiskCacheStrategy.RESULT)
                 .into(imageVideo);
     }
+    
+    //add scale video cover to 4:3
+    @Override
+    public void onWindowFocusChanged(boolean hasWindowFocus) {
+        super.onWindowFocusChanged(hasWindowFocus);
+        width = imageVideo.getWidth();
+        imageVideo.setMaxHeight(width * 3 / 4);
+    }
 
 }

@@ -43,10 +43,11 @@ public class SeedAdapter extends BaseAdapter {
 
         final seed dao = getItem(position);
 
-        //display layout from type
+        //check not null object
         if (convertView == null) {
-            // check not null object
+            //check get json complete 
             if (dao.getType() != null) {
+                //display layout from type
                 if (dao.getType().contentEquals("track")) {
                     convertView = getTrackView(dao, parent);
                 } else if (dao.getType().contentEquals("video")) {
@@ -59,6 +60,7 @@ public class SeedAdapter extends BaseAdapter {
         return convertView;
     }
 
+    //set layout from track
     private View getTrackView(seed dao, ViewGroup parent) {
         TrackListItem item;
         Context context = parent.getContext();
@@ -80,6 +82,7 @@ public class SeedAdapter extends BaseAdapter {
         return convertView;
     }
 
+    //set layout from video
     private View getVideoView(seed dao, ViewGroup parent) {
         VideoListItem item;
         Context context = parent.getContext();
@@ -96,10 +99,12 @@ public class SeedAdapter extends BaseAdapter {
         }
 
         item.setImageVideo(context, dao.getCover());
+        item.setNameVideo("[" + dao.getType() + "] " + dao.getName());
 
         return convertView;
     }
 
+    //set layout from ads
     private View getAdsView(seed dao, ViewGroup parent) {
         AdsListItem item;
         Context context = parent.getContext();
@@ -116,6 +121,7 @@ public class SeedAdapter extends BaseAdapter {
         }
 
         item.setImageAds(context, dao.getCover());
+        item.setNameAds("[" + dao.getType() + "] " + dao.getName());
 
         return convertView;
     }
